@@ -1,0 +1,10 @@
+myapaptyksi01   ---   29
+myapaptyksi02   ---   7
+myapaptyksi03   ---   3
+myapaptyksi04   ---   18
+myapaptyksi05   ---   4
+myapaptyksi06   ---   -1
+myapaptyksi07   ---   -1
+myapaptyksi08   ---   245609
+myapaptyksi09   ---   30097
+myapaptyksi10   ---   63
