@@ -1,6 +1,6 @@
 <h1>Problem 1: Election Race</h1>
 N candidates are placed in a circle of length L. N \<= 500000, L \< 5000000.
-Each one has an integer starting position D~i~ (0 \<= D~i~ \<= L) and a double velocity V~i~ (0 \<= V~i~ \<= 5) 
+Each one has an integer starting position D<sub>i</sub> (0 \<= D<sub>i</sub> \<= L) and a double velocity V<sub>i</sub> (0 \<= V<sub>i</sub> \<= 5) 
 with two digits right of the comma. When a candidate is overtaken he is disqualified from the race.
 In this problem you must print the sequence of the disqualification by printing each candidates number.
 
@@ -12,14 +12,16 @@ N lines follow containing starting position and velocity for the i[sup]th[/sup] 
 The sequence of the numbers of the disqualified candidates.
 
 <h2>Examples</h2>
-`\> cat candidates1.txt
+```
+> cat candidates1.txt
 6 150
 0 1.75
 30 0.8
 60 0.5
 70 1
 120 0.1
-140 0.9`
+140 0.9
+```
 
 | In C++ | In SML/NJ |
 |---|---|

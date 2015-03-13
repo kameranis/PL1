@@ -17,7 +17,7 @@ Are better shown in the exercise [description](http://courses.softlab.ntua.gr/pl
 
 <h2>Solution </h2>
 I have implemented the Djikstra algorithm, though A\* would be a much better choice. To determine if two bats 
-can see each other, we check that each wall has all its edges on one side of the line created by bat~1~ and bat~2~.
+can see each other, we check that each wall has all its edges on one side of the line created by bat<sub>1</sub> and bat<sub>2</sub>.
 A better choice would be to check if the line passes through a wall using the extended Bresenham algorithm
 
 <h3>Analysis</h3>
