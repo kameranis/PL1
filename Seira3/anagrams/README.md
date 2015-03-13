@@ -12,24 +12,24 @@ String of moves in C++, Java and ML; list of moves in Prolog. Note that there is
 one correct sequence of moves.
 
 <h2>Examples</h2>
-In Prolog
-`?- anagrams("rice", "cire", Moves).
-Moves = ['10','12','12','12','02'].
-?- anagrams("anagram", "mragana", Moves).
-Moves = ['12','10','12','02','12','12','12','12'].
-?- anagrams("mirror", "mirorr", Moves).
+In Prolog  
+`?- anagrams("rice", "cire", Moves).  
+Moves = ['10','12','12','12','02'].  
+?- anagrams("anagram", "mragana", Moves).  
+Moves = ['12','10','12','02','12','12','12','12'].  
+?- anagrams("mirror", "mirorr", Moves).  
 Moves = ['12','12','10','12','12','02','10','21','21','21','21','21','02','12','12',
 ’12','10','21','21','21','02','12','12','12','12’].`
 
-In SML/NJ
-`- anagrams ("rice", "cire");
- val it = "10-12-12-12-02" : string `
-
-In C++, Java
-`$ java Anagrams rice cire
-10-12-12-12-02
-$ ./a.out rice cire
-10-12-12-12-02`
+In SML/NJ  
+`- anagrams ("rice", "cire");  
+ val it = "10-12-12-12-02" : string`  
+  
+In C++, Java  
+`$ java Anagrams rice cire  
+10-12-12-12-02  
+$ ./a.out rice cire  
+10-12-12-12-02`  
 
 <h2>Solution </h2>
 We will use the A\* algorithm. As a heuristic we use how many letters are not in position.

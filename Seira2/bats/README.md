@@ -21,5 +21,5 @@ can see each other, we check that each wall has all its edges on one side of the
 A better choice would be to check if the line passes through a wall using the extended Bresenham algorithm
 
 <h3>Analysis</h3>
-Djikstra needs O(K) to finish. Each iteration needs O(K[sup]2[/sup]) to determine where it can continue next.
-All in all the algorithmical complexity is O(K[sup]3[/sup]). Which is pretty bad...
+Djikstra needs O(K) to finish. Each iteration needs O(K<sup>2</sup>) to determine where it can continue next.
+All in all the algorithmical complexity is O(K<sup>3</sup>). Which is pretty bad...

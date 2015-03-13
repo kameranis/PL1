@@ -1,5 +1,5 @@
 <h1>Problem 2: anaptiksi</h1>
-A road must be renovated. Each day the crew renovates from S~i~ to E~i~. This segment might contain
+A road must be renovated. Each day the crew renovates from S<sub>i</sub> to E<sub>i</sub>. This segment might contain
 parts that have already been renovated. Find the first day that the largest consecutive unrenovated
 segment is less than or equal to X. Else print -1
 
@@ -11,7 +11,7 @@ L is the total length of the road. X is the limit that the largest segment must 
 Returns the first day that the largest segment does not supercede X, or -1 if there is no such day
 
 <h2>Examples</h2>
-| `\> cat anaptyksi1.txt` |`\> cat anaptyksi2.txt` |
+| `> cat anaptyksi1.txt` |`> cat anaptyksi2.txt` |
 |---|---|
 | `4 30 6` | `4 30 1` |
 | `1 5` | `1 5` |
@@ -20,13 +20,14 @@ Returns the first day that the largest segment does not supercede X, or -1 if th
 | `18 28` | `18 28` |
 
 | In C++ | In SML/NJ |
-| `\> ./dromoi anaptyksi1.txt` | `- dromoi "anaptyksi1.txt";` |
+|---|---|
+| `> ./dromoi anaptyksi1.txt` | `- dromoi "anaptyksi1.txt";` |
 | `2` | `val it = 2 : int` |
-| `\> ./dromoi anaptyksi2.txt` | `- dromoi "anaptyksi2.txt";` |
+| `> ./dromoi anaptyksi2.txt` | `- dromoi "anaptyksi2.txt";` |
 | `-1` | `val it = ~1 : int` |
 
 <h2>Solution</h2>
-For each day we create an object containing day, S~i~ and E~i~, adding (0, 0, 0) and (0, L, L). We sort in ascending S~i~ value.
+For each day we create an object containing i, S<sub>i</sub> and E<sub>i</sub>, adding (0, 0, 0) and (0, L, L). We sort in ascending S<sub>i</sub> value.
 Next we will do a binary search on the days. Let M be the middle day, we filter only the days less than M
 and find the largest unrenovated segment in O(M). If at the end `right == L` then no day was found.
 
