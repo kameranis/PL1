@@ -1,7 +1,8 @@
 <h1>Problem 1: Election Race</h1>
 N candidates are placed in a circle of length L. N \<= 500000, L \< 5000000.
-Each one has an integer starting position D<sub>i</sub> (0 \<= D<sub>i</sub> \<= L) and a double velocity V<sub>i</sub> (0 \<= V<sub>i</sub> \<= 5) 
-with two digits right of the comma. When a candidate is overtaken he is disqualified from the race.
+Each one has an integer starting position D<sub>i</sub> (0 \<= D<sub>i</sub> \<= L) and a double
+velocity V<sub>i</sub> (0 \<= V<sub>i</sub> \<= 5) with two digits right of the comma. When a 
+candidate is overtaken he is disqualified from the race.
 In this problem you must print the sequence of the disqualification by printing each candidates number.
 
 <h2>Input</h2>
@@ -27,8 +28,6 @@ The sequence of the numbers of the disqualified candidates.
 |---|---|
 | `> ./agonas candidates1.txt` | `- agonas "candidates1.txt";`|
 | `2 3 5 4 6` | `val it = [2,3,5,4,6] : int list` |
-
-
 
 <h2>Solution </h2>
 For every i we check if this candidate can overtake the next and if so, we add the ovetakee and the time
